@@ -1,3 +1,13 @@
+sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
+
+git clone https://github.com/NamasteIndia/xmrig-proxy
+
+mkdir xmrig-proxy/build && cd xmrig-proxy/build
+
+cmake ..
+
+make -j$(nproc)
+
 # XMRig Proxy
 [![Github All Releases](https://img.shields.io/github/downloads/xmrig/xmrig-proxy/total.svg)](https://github.com/xmrig/xmrig-proxy/releases)
 [![GitHub release](https://img.shields.io/github/release/xmrig/xmrig-proxy/all.svg)](https://github.com/xmrig/xmrig-proxy/releases)
