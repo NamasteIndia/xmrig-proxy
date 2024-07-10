@@ -8,6 +8,10 @@ cmake ..
 
 make -j$(nproc)
 
+sudo apt-get install ufw -y
+
+sudo ufw allow 3000/tcp
+
 # XMRig Proxy
 [![Github All Releases](https://img.shields.io/github/downloads/xmrig/xmrig-proxy/total.svg)](https://github.com/xmrig/xmrig-proxy/releases)
 [![GitHub release](https://img.shields.io/github/release/xmrig/xmrig-proxy/all.svg)](https://github.com/xmrig/xmrig-proxy/releases)
